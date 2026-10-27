@@ -192,7 +192,7 @@ pkg install -y proot-distro curl ca-certificates bash
 
 # Install Ubuntu if it is not installed
 if ! proot-distro list | grep -q 'ubuntu'; then
-    proot-distro install ubuntu
+    proot-distro install ubuntu:26.04
 fi
 
 # Run installation inside Ubuntu
